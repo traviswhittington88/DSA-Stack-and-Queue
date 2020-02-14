@@ -1,0 +1,69 @@
+Working with stacks and queues
+
+Objective: By the end of this checkpoint, you can solve problems with stacks and queues
+
+- Stacks and Queues are 2 of the most commonly used data structures in web development
+  e.g. Undo in text editor & history in web browser 
+
+Key Terms: 
+*********
+Stack
+LIFO
+
+Queue
+FIFO
+Enqueue
+Dequeue
+*********
+
+Stack
+
+Like a list stores elements in a LIFO (last in first out) order. 
+Imagine a stack of heavy plates in your cabinet.. You most likely take the one off the top.
+That's LIFO. 
+
+Stacks are thought of as vertical data structures whereas arrays and lists are horizontal.
+
+Q: How do you implement a stack? 
+
+A: Using a singly linked list? .. I thought those were separate from stacks...
+
+-Place constraints on the singly linked list that allow operations at only 1 place, the end
+ of the list
+
+** Creates a node containing the data and a reference to the next item **
+
+class _Node {
+  constructor(data, next = null) {
+    this.data = data;
+    this.next = next;
+  }
+}
+
+- Create a stack class with a constructor that has a top property.. 
+  aka the last node in the list
+
+class Stack {
+  constructor() {
+    this.top = null; // nothing in stack by default
+  }
+}
+
+A stack has 2 primary function:
+
+- push():places data on 'top' of the stack  
+- pop():removes data from the 'top' of the stack
+
+
+Insertion - see index.js
+Removal - see index.js
+
+
+
+
+
+
+
+
+
+
